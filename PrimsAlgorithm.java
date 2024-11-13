@@ -22,10 +22,8 @@ class Graph{
         adjLists.get(j).add(new Edge(i, weigth));
     } 
     public int primsAlgorithm(){
-        // implement prim's algorithm
         PriorityQueue<Edge> pq=new PriorityQueue<>(Comparator.comparingInt(e->e.weigth));
         boolean[] visited=new boolean[this.vertices];
-        // visited[0]=true;
         int ans=0;
         pq.offer(new Edge(0, 0));
         while (!pq.isEmpty()) {
