@@ -46,44 +46,6 @@ class Edge {
         return "Edge(" + src + " -- " + dest + ", weight: " + weight + ")";
     }
 }
-
-// class Graph {
-//     int vertices;
-//     List<Edge> edges;
-//     public Graph(int vertices) {
-//         this.vertices = vertices;
-//         edges = new ArrayList<>();
-//     }
-//     public void addEdge(int src, int dest, int weight) {
-//         edges.add(new Edge(src, dest, weight));
-//     }
-
-//     // Kruskal's algorithm to find MST
-//     public List<Edge> kruskalMST() {
-//         // Sort edges by weight
-//         Collections.sort(edges, Comparator.comparingInt(e -> e.weight));
-
-//         // Initialize DSU
-//         DSU dsu = new DSU(vertices);
-//         List<Edge> mst = new ArrayList<>();
-
-//         for (Edge edge : edges) {
-//             int rootSrc = dsu.find(edge.src);
-//             int rootDest = dsu.find(edge.dest);
-
-//             // Check if adding this edge creates a cycle
-//             if (rootSrc != rootDest) {
-//                 mst.add(edge); // Add to MST
-//                 dsu.union(rootSrc, rootDest);
-//             }
-//             if (mst.size() == vertices - 1) {
-//                 break;
-//             }
-//         }
-
-//         return mst;
-//     }
-// }
 class Graph{
     private int vertices;
     private List<Edge>EdgeList;

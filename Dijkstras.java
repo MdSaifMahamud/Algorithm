@@ -20,27 +20,7 @@ class Graph{
     public void addEdge(int i,int j,int weight){
         adjLists.get(i-1).add(new Edge(j-1, weight));
     }
-    // public int[] dijkstra(int src){
-    //     src--;
-    //     int[] dist=new int[this.vertices];
-    //     Arrays.fill(dist, Integer.MAX_VALUE);
-    //     dist[src]=0;
-    //     PriorityQueue<Edge> pq=new PriorityQueue<>(Comparator.comparingInt(e->e.weight));
-    //     pq.add(new Edge(src, 0));
-    //     while(!pq.isEmpty()){
-    //         Edge ed=pq.poll();
-    //         int u=ed.to;
-    //         for(Edge nbr:adjLists.get(u)){
-    //             int v=nbr.to;
-    //             int weight=nbr.weight;
-    //             if(dist[u]+weight<dist[v]){
-    //                 dist[v]=dist[u]+weight;
-    //                 pq.add(new Edge(v, dist[v]));
-    //             }
-    //         }
-    //     }
-    //     return dist;
-    // }
+
     public void dijkstras(int src){
         src--;
         int[] dist=new int[this.vertices];
