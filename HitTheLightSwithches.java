@@ -2,7 +2,7 @@ import java.util.*;
 public class HitTheLightSwithches {
     public static void main(String[] args) throws Exception{
         Solution a=new Solution();
-
+        
     }
 }
 
