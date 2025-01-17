@@ -13,7 +13,7 @@ class Graph{
         adjLists.get(i).add(j);
     }
     public void addEdge(int i,int j,boolean isUndir){
-        adjLists.get(i).add(j);
+        adjLists.get(i).add(j);                                         // 
         if(isUndir){
             adjLists.get(j).add(i);
         }
