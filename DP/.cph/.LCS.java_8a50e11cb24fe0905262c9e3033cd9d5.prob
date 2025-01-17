@@ -1,0 +1,1 @@
+{"name":"Local: LCS","url":"/home/mdsaif/Documents/Algorithm/DP/LCS.java","tests":[{"id":1736135850110,"input":"abcda\nbdapq","output":""},{"id":1736138119948,"input":"AGGTAB\nGXTXAYB","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mdsaif/Documents/Algorithm/DP/LCS.java","group":"local","local":true}
